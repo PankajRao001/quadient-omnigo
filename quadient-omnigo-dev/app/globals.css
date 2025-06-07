@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+@theme {
+  --color-primary: #ff4200;
+  --color-primary-light: #fdf9f8;
+  --color-secondary: #7536f0;
+  --color-gray: #949494;
+  --color-conceptual: #73be44;
+  --color-blueHijab: #cdf1fc;
+  --color-toxicLatte: #ebfaef;
+  --color-coolGreen: #34c759;
+  --color-carteBlanche: #e8eaff;
+  --color-roseMochi: #ffeaee;
+  --color-light-green: #ecfff2;
+}
+
+.main-heading {
+  @apply text-[28px] sm:text-[35px] md:text-[45px] lg:text-[52px] font-semibold text-black;
+}
+.sub-heading {
+  @apply text-xl lg:text-2xl font-medium text-black;
+}
+.description {
+  @apply text-xl lg:text-[22px] font-medium text-gray;
+}
+.title-heading {
+  @apply text-base sm:text-lg lg:text-xl font-medium;
+}
+.small-text {
+  @apply text-base font-medium text-gray;
+}
+.success-text {
+  @apply text-2xl sm:text-3xl md:text-[35px] lg:text-[40px] font-medium text-black;
+}
+.medium-text {
+  @apply text-2xl lg:text-3xl font-medium text-black;
+}
+.saving-amount {
+  @apply text-2xl md:text-3xl lg:text-[40px] xl:text-[50px] font-medium text-black leading-[100%];
+}
+
+.saving-card {
+  @apply min-h-[100px] md:min-h-[146px] rounded-[20px] py-4 px-5 md:py-5 md:px-6 xl:py-6 xl:pl-8 xl:pr-11 flex items-end justify-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat);
+}
+
+p {
+  font-family: var(--font-quicksand);
+}
+
+.filter-dropdown {
+  box-shadow: -13px 13px 42px 0px #0000001a;
+}
+
+/* Custom date input styling */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+::-webkit-scrollbar {
+  @apply h-1 w-1 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-lg;
+}
